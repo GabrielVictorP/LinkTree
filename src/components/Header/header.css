@@ -1,0 +1,15 @@
+.perfil_conteudo {
+    margin: 35px 0;
+    text-align: center;
+    color: var(--cor-text);
+    font-size: 20px;
+}
+
+.perfil_imagem {
+    width: 96px;
+    margin: auto;
+    height: 96px;
+    background-image: url('../../assets/foto-de-gabriel.jpg');
+    background-size: cover;
+    border-radius: 50%;
+}
