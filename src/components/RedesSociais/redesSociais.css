@@ -1,14 +1,15 @@
-/* .link {
-  display: flex;
+.link {
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
   text-decoration: none;
   color: #333;
+  grid-column-gap: 200px; 
+
 }
 
 .icone {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 150px; 
+  margin-right: 8px; 
 }
 
 a {
@@ -24,6 +25,7 @@ a {
   position: relative;
   margin: 15px;
   transition: 0.3s ease-in;
+  
 }
 
 a:hover {
@@ -47,49 +49,17 @@ a:hover {
   margin: auto;
   margin-bottom: 10px;
 }
- */
 
-
- .link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #333;
-}
-
-a {
-  text-decoration: none;
-  background-color: var(--cor-secundaria);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 26px;
-  font-weight: 600;
-  font-size: 1.2em;
-  padding: 18px;
-  position: relative;
-  margin: 15px;
-  transition: 0.3s ease-in;
-}
-
-a:hover {
-  animation: shake 0.5s;
-}
-
-@keyframes shake {
-  0%, 100% {
-    transform: translateX(0);
+@media only screen and (max-width: 600px) {
+  .link {
+    display: flex;
+    flex-direction: column; 
+    text-align: center; 
   }
-  25%, 75% {
-    transform: translateX(-5px);
-  }
-  50% {
-    transform: translateX(5px);
+
+  .icone {
+    margin-right: 0; 
+    margin-bottom: 8px; 
   }
 }
 
-.conteudo_links {
-  max-width: 600px;
-  margin: auto;
-  margin-bottom: 10px;
-}
